@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <title> Exercício de Fixação </title>
+        <meta charset="utf-8"/>
+    </head>
+
+    <body bgcolor="#FFFAF7">
+        
+        <br/>
+        <h2 align="center"> Exemplificação de formulário - Henrique Rodrigues </h2>
+
+        <table align="center" cellpadding="20" bordercolor="#733F49" bgcolor="white">
+            <tr>
+                <td>
+                    <fieldset>
+                        
+                        <legend align="center"> Dados do Cadastrador </legend>
+                        <form action="#" method="post" name="livros-cadastro">
+                            
+                            <table align="left">
+
+                                <tr>
+                                    <td><label> Nome Funcionário: </label></td>
+                                    <td><input type="text" id="func" name="func" size="30" placeholder="Insira o seu nome" required /></td>
+                                </tr>
+                                <tr>
+                                    <td><label> Id Funcionário: </label></td>
+                                    <td><input type="text" id="idfunc" name="idfunc" size="30" placeholder="000-00" maxlength="6" required /></td> 
+                                </tr>
+                                <tr>
+                                    <td><label> Email: </label></td>
+                                    <td><input type="email" id="mail" name="mail" size="30" placeholder="Insira seu E-mail" required /></td>
+                                </tr>
+                                <tr>
+                                    <td><label> Telefone: </label></td>
+                                    <td><input type="tel" id="fone" name="fone" maxlength="15" size="30" placeholder="(00) 00000-0000" required /></td>
+                                </tr>
+                                
+                            </table>
+                    </fieldset>
+                    <fieldset>
+                            <table>
+                                <legend align="center"> Cadastro dos Livros </legend>
+                                <tr>
+                                    <td><label> Título da Obra: </label></td>
+                                    <td><input type="text" id="tit" name="tit" size="30" placeholder="Insira o título" /></td>
+                                </tr>
+                                <tr>
+                                    <td><label> Editora: </label></td>
+                                    <td><input type="text" id="editora" name="editora" size="30" placeholder="Insira a informação" /></td>
+                                </tr>
+                                <tr>
+                                    <td><label> Data de publicação: </label></td>
+                                    <td><input type="date" id="datapublicacao" name="datapublicacao" min="1199-01-01" max="2022-01-01" /></td>
+                                </tr>
+                                <tr>
+                                    <td><label> Autor(a): </label></td>
+                                    <td><label><input type="radio" id="nomeautor" name="nomeautor" value="A" requerid />
+                                        Identificado </label>
+                                    <input type="text" id="identificado" name="identificado" size="25" disabled />
+                                    <br/>
+                                    <label><input type="radio" id="nomeautor" name="nomeautor" value="D" requerid />
+                                        Desconhecido </label>
+                                    <br/>
+                                    <label><input type="radio" id="nomeautor" name="nomeautor" value="H" requerid /> 
+                                        Heterônimo </label>
+                                    <input type="text" id="onimo" name="onimo" size="25" disabled /></td>
+                                </tr>
+                                <tr>
+                                    <td><label> Volume de páginas: </label></td>
+                                    <td><label><input type="radio" id="volumepag" name="volumepag" />
+                                        0 a 50 Páginas </label>
+                                    <br/>
+                                    <label><input type="radio" id="volumepag" name="volumepag" /> 
+                                        50 a 100 Páginas </label>
+                                    <br/>
+                                        <label><input type="radio" id="volumepag" name="volumepag" /> 
+                                        100 a 200 Páginas </label>
+                                    <br/>
+                                        <label><input type="radio" id="volumepag" name="volumepag" /> 
+                                        200 a 500 Páginas </label>
+                                    <br/>
+                                        <label><input type="radio" id="volumepag" name="volumepag" /> 
+                                        500 a 1000 Páginas </label>
+                                    <br/>
+                                        <label> <input type="radio" id="volumepag" name="volumepag" />
+                                        1000 ou mais Páginas</label></td>
+                                </tr>
+                                <tr>
+                                    <td><label> Gênero Literário: </label></td>
+                                    <td><select id="genero" name="genero" required> 
+                                        <option value="" selected="selected"> --Selecione-- </option>
+
+                                        <optgroup label="Ficção"> 
+                                            <option value="AA"> Ação e aventura </option>
+                                            <option value="FA"> Ficção afro-americana </option>
+                                            <option value="AT"> Antologias </option>
+                                            <option value="IF"> Infantil </option>
+                                            <option value="FC"> Ficção Cristã </option>
+                                            <option value="CL"> Clássicos </option>
+                                            <option value="QR"> Quadrinhos e romances gráficos </option>
+                                            <option value="CM"> Chegando à maioridade </option>
+                                            <option value="FT"> Ficção Contemporânea </option>
+                                            <option value="CE"> Cultural e étnico </option>
+                                            <option value="FS"> Fantasia </option> 
+                                            <option value="FH"> Ficção histórica </option> 
+                                            <option value="HC"> Humor e comédia </option> 
+                                            <option value="FQ"> Ficção LGBTQ </option> 
+                                            <option value="FL"> Ficção Literária </option> 
+                                            <option value="MS"> Mashups </option> 
+                                            <option value="MC"> Mistério e crime </option> 
+                                            <option value="PR"> Peças e roteiros </option> 
+                                            <option value="PS"> Poesia </option> 
+                                            <option value="RC"> Romance </option>
+                                            <option value="FN"> Ficção científica </option> 
+                                            <option value="CO"> Contos </option> 
+                                            <option value="TM"> Temáticas e motivações </option> 
+                                            <option value="TS"> Thriller e Suspense </option> 
+                                            <option value="FF"> Ficção Feminina </option> 
+                                            <option value="JA"> Jovem adulto </option> 
+                                        </optgroup>
+
+                                        <optgroup label="Não-Ficção">
+                                            <option value="AG"> Agricultura </option> 
+                                            <option value="BM"> Biografias e memórias </option> 
+                                            <option value="GN"> Gestão de negócios </option> 
+                                            <option value="GC"> Guias de carreira </option>
+                                            <option value="NI"> Não-ficção infantil </option> 
+                                            <option value="QN"> Quadrinhos não ficção </option> 
+                                            <option value="CI"> Computadores e Internet </option> 
+                                            <option value="CB"> Culinária, comida, vinho e bebidas espirituosas </option> 
+                                            <option value="FV"> Faça você mesmo e artesanato </option> 
+                                            <option value="PJ"> Projeto </option>
+                                            <option value="ER"> Educação e Referência </option> 
+                                            <option value="ET"> Entretenimento </option> 
+                                            <option value="SB"> Saúde e Bem-Estar </option> 
+                                            <option value="CJ"> Casa e jardim </option> 
+                                            <option value="HS"> Humanidades e Ciências Sociais </option> 
+                                            <option value="IS"> Inspirador </option>
+                                            <option value="LF"> LGBTQ Não Ficção </option> 
+                                            <option value="MC"> Matemática e Ciências </option> 
+                                            <option value="NA"> Natureza </option>
+                                            <option value="NE"> Nova era </option> 
+                                            <option value="PF"> Paternidade e famílias </option> 
+                                            <option value="FT"> Fotografia </option>
+                                            <option value="RE"> Religião e Espiritualidade </option> 
+                                            <option value="AM"> Autoajuda e autoaprimoramento </option>
+                                            <option value="SR"> Sexo e Relacionamentos </option>
+                                            <option value="EL"> Esportes e atividades ao ar livre </option> 
+                                            <option value="TL"> Tecnologia </option> 
+                                            <option value="VP"> Viajar por </option> 
+                                            <option value="CV"> Crime Verdadeiro </option>
+                                            <option value="CS"> Casamentos </option> 
+                                            <option value="EP"> Escrita e Publicação </option>
+                                        </optgroup>
+                                    </select></td>
+                                </tr>
+                                <tr>
+                                    <td><label> Sinopse breve: </label></td>
+                                    <td><textarea id="sinopse" name="sinopse" cols="40" rows="10" placeholder="Escreva, agora, um pequeno descritivo sobre o conteúdo presente."></textarea></td>
+                                </tr>
+                                <tr>
+                                    <td><label> Coloração da Capa: </label></td>
+                                    <td><input type="color" id="corcapa" name="corcapa" /></td>
+                                </tr>
+                                <tr>
+                                    <td><label> Folhagem do Miolo: </label></td>
+                                    <td><label><input type="radio" id="papel" name="papel" />
+                                        Off-set </label>
+                                    <label><input type="radio" id="papel" name="papel" /> 
+                                        Pólen </label>
+                                    <label><input type="radio" id="papel" name="papel" />
+                                        Couché  </label></td>
+                                </tr>
+                                    <td><label> Diagramação da escrita: </label></td>
+                                <br/>
+                                <td><input type="number" id="diag" name="diag" min="1" max="30" /></td>
+                                </tr>
+                            </table>
+                    </fieldset>
+                    <fieldset>
+                            <table align="center">
+                                <legend align="center"> Levantamento de Popularidade </legend>
+                                <tr>
+                                    <td><label> Aprovação do Público (em %): </label></td>
+                                    <td><input type="range" id="aprovacao" name="aprovacao" /></td>
+                                    <br/>
+                                </tr> 
+                                <tr>
+                                    <td><label> Data do cadastro: </label></td>
+                                    <td><input type="datetime-local" id="dathor" name="dathor" required /></td>
+                                </tr>
+                                <tr>
+                                    <th colspan="2"><button type="submit" id="enviar" name="enviar">
+                                        <img src="img/envelope.png" width="20" height="20" alt="enviar" />
+                                    </button>
+                                    <input type="reset" id="reseet" name="reseet" value="RESET" /></th>
+                                </tr>
+                            </table>
+                    </fieldset>
+                    <fieldset>
+                        <table align="center">
+                        <legend align="center"> Referências </legend>
+                            <tr>
+                                <td><label> Gêneros Literários: </label></td>
+                                <th colspan="2"><label>
+                                    <a href="https://escritaselvagem.com.br/carreira-literaria/lista-de-generos-literarios/" target="_blank" title="Escrita Selvagem"> Escrita Selvagem </a>
+                                </label></th>
+                            </tr>
+                        </table>
+                    </fieldset>    
+                    <fieldset>
+                        <table align="center">
+                        <legend align="center"> Meow! </legend>
+                            <tr>
+                                <th colspan="2"><label>
+                                    <img src="img/gato.gif" width="" height="" alt="Gato Leitor" />
+                                </label></th>
+                            </tr>
+                        </table>
+                    </fieldset>    
+
+
+                        </form>
+                </td>
+            </tr>
+        </table>
+
+    </body>
+
+</html>
